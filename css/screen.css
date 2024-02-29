@@ -211,39 +211,47 @@ body{
   font-family: Oswald, sans-serif;
   color: var(--color-dark-blue);
   background: var(--color-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
-  border-radius: 15px;
+  border: none;
   width: 50em;
-  margin: auto;
+  width: 100%; 
   }
 
 .background_picture {
-  flex: 1;
   overflow: hidden;
-  border-radius: 15px 0 0 15px;
+  order: 2; 
+  margin-top: 15px;
+  max-width: 100%; 
+  border-radius: 15px;
 }
 
 #form {
+  order: 1; 
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 #form fieldset {
   border: none;
-  padding-bottom: 20px;
 }
 
 
 .main_legend {
-  font-size: 3em;
+  font-size: 2.5em; 
+  line-height: 1.2; 
 }
 
 legend {
@@ -252,7 +260,7 @@ legend {
 }
 
 .descr {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 label {
@@ -276,46 +284,79 @@ input[type="submit"] {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   font-weight: 600;
-  margin-left: 10px;
+ 
   color: var(--color-dark-blue);
+  min-width: 100%
 }
 
 /* Media Queries for Responsiveness */
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column; 
+@media only screen and (min-width: 601px) {
+  /* Larger Screen Styles */
+  container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border: none;
-  }
-
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 15px;
+    width: 50em;
+    }
+  
   .background_picture {
-    order: 2; 
-    margin-top: 15px;
-    max-width: 100%; 
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
   }
-
+  
   #form {
-    order: 1; 
-    margin-bottom: 15px; 
-    width: 80%; 
-    max-width: 300px; 
+    flex: 1;
+    padding: 20px;
     box-sizing: border-box;
   }
-
-  #form fieldset {
-    padding: 15px;
-  }
-
-  #form input[type="submit"] {
-    width: 100%; 
-  }
-  .container{
-    border: none;
-  }
-}
-
-@media only screen and () {
   
+  #form fieldset {
+    border: none;
+    padding-bottom: 20px;
+  }
+  
+  
+  .main_legend {
+    font-size: 3em;
+  }
+  
+  legend {
+    padding-bottom: 20px;
+    line-height: 1em;
+  }
+  
+  .descr {
+    font-size: 1.5em;
+  }
+  
+  label {
+    color: var(--color-grey);
+    font-family: Poppins;
+    font-size: 0.8em;
+  }
+  
+  input[type="text"],
+  input[type="password"]{
+    color: var(--color-black);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  input[type="submit"] {
+    padding: 0.5em 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--color-dark-blue);
+  }  
 }
 
 /* ===== STATE STYLES ======= */
