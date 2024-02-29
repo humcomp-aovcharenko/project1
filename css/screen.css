@@ -196,12 +196,15 @@ label {
 
 /* ===== LAYOUT STYLES ====== */
 :root {
-    -dark-pink: #FC53A9;
-    -white: #FFF;
-    -pale-pink: #FFD8EC;
-    -normal-pink: #FB97CA;
-    -black: #111;
+    -color-dark-blue: #1E1D60;
+    -color-white: #FFF;
+    -color-pale-blue: #D4F7FF;
+    -color-black: #111;
+    -color-grey: #a5a5a5;
 }
- 
+
+body{
+
+}
 
 /* ===== STATE STYLES ======= */
