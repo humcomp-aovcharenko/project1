@@ -261,6 +261,8 @@ legend {
 
 .descr {
   font-size: 1.2em;
+  padding-bottom: 20px;
+  line-height: 1em;
 }
 
 label {
@@ -409,6 +411,8 @@ input[type="submit"] {
 
   .descr {
     font-size: 1.5em;
+    padding-bottom: 20px;
+    line-height: 1em;
   }
 
   label {
