@@ -49,7 +49,7 @@ button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+ --webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -145,7 +145,6 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -309,7 +308,6 @@ input[type="submit"] {
     flex: 1;
     margin-top: 15px;
     overflow: hidden;
-    border-radius: none;
     align-self: stretch;
     margin: auto;
   }
