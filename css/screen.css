@@ -284,63 +284,67 @@ input[type="submit"] {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   font-weight: 600;
- 
   color: var(--color-dark-blue);
   min-width: 100%
 }
 
 /* Media Queries for Responsiveness */
-@media only screen and (min-width: 601px) {
-  /* Larger Screen Styles */
-  container {
+@media only screen and (min-width: 481px) and (max-width: 1270px){
+  .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--color-white);
-    border: 1px solid var(--color-black);
+    border: none;
     border-radius: 15px;
-    width: 50em;
-    }
-  
+    width: 80%; 
+    margin: 0 auto; 
+  }
+
   .background_picture {
+    order: 1; 
     flex: 1;
+    margin-top: 15px;
     overflow: hidden;
-    border-radius: 15px 0 0 15px;
+    border-radius: none;
+    align-self: stretch;
+    margin: auto;
   }
-  
+
   #form {
-    flex: 1;
-    padding: 20px;
     box-sizing: border-box;
+    order: 2; 
+    flex: 1;
+    margin-top: 0;
   }
-  
+
   #form fieldset {
     border: none;
     padding-bottom: 20px;
   }
-  
-  
+
   .main_legend {
     font-size: 3em;
   }
-  
+
   legend {
     padding-bottom: 20px;
     line-height: 1em;
   }
-  
+
   .descr {
     font-size: 1.5em;
   }
-  
+
   label {
     color: var(--color-grey);
     font-family: Poppins;
     font-size: 0.8em;
   }
-  
+
   input[type="text"],
-  input[type="password"]{
+  input[type="password"] {
     color: var(--color-black);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
@@ -348,7 +352,81 @@ input[type="submit"] {
     box-sizing: border-box;
     margin-bottom: 15px;
   }
-  
+
+  input[type="submit"] {
+    padding: 0.5em 0.75em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--color-dark-blue);
+  }
+}
+
+@media only screen and (min-width: 1271px){
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto; 
+  }
+
+  .background_picture {
+    order: 1;
+    flex: 1;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+    margin-top: 0;
+    align-self: stretch;
+  }
+
+  #form {
+    box-sizing: border-box;
+    order: 2;
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  #form fieldset {
+    border: none;
+    padding-bottom: 20px;
+  }
+
+  .main_legend {
+    font-size: 3em;
+  }
+
+  legend {
+    padding-bottom: 20px;
+    line-height: 1em;
+  }
+
+  .descr {
+    font-size: 1.5em;
+  }
+
+  label {
+    color: var(--color-grey);
+    font-family: Poppins;
+    font-size: 0.8em;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    color: var(--color-black);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
   input[type="submit"] {
     padding: 0.5em 1em;
     font-family: Arial, Helvetica, sans-serif;
@@ -356,7 +434,5 @@ input[type="submit"] {
     font-weight: 600;
     margin-left: 10px;
     color: var(--color-dark-blue);
-  }  
+  }
 }
-
-/* ===== STATE STYLES ======= */
