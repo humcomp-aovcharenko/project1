@@ -207,7 +207,7 @@ html {
 }
 
 body{
-  font-family: Oswald, 'Open Sans', sans-serif;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
   color: var(--color-dark-blue);
   background: var(--color-pale-blue);
   display: flex;
@@ -266,7 +266,7 @@ legend {
 
 label {
   color: var(--color-grey);
-  font-family: Poppins;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 0.8em;
 }
 
