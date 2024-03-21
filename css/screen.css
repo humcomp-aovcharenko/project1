@@ -207,7 +207,7 @@ html {
 }
 
 body{
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, 'Open Sans', sans-serif;
   color: var(--color-dark-blue);
   background: var(--color-pale-blue);
   display: flex;
@@ -286,11 +286,13 @@ input[type="submit"] {
   font-size: 1.1em;
   font-weight: 600;
   color: var(--color-dark-blue);
-  min-width: 100%
+  margin-left: 10px;
+  min-width: 95%;
 }
 
+
 /* Media Queries for Responsiveness */
-@media only screen and (min-width: 481px) and (max-width: 1270px){
+@media only screen and (min-width: 481px) and (max-width: 1317px){
   .container {
     display: flex;
     flex-direction: column;
@@ -360,10 +362,11 @@ input[type="submit"] {
     font-weight: 600;
     margin-left: 10px;
     color: var(--color-dark-blue);
+    min-width: 40%;
   }
 }
 
-@media only screen and (min-width: 1271px){
+@media only screen and (min-width: 1317px){
   .container {
     display: flex;
     flex-direction: row;
@@ -436,5 +439,13 @@ input[type="submit"] {
     font-weight: 600;
     margin-left: 10px;
     color: var(--color-dark-blue);
+    min-width: 40%;
+  }
+
+  .toggle-password {
+    cursor: pointer;
+    right: 10px;
+    color: #666;
+    margin-top: 5px;
   }
 }
